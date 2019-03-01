@@ -1,0 +1,41 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"path": "appengine/cloudsql",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "eyCJTSzH8Eu81PaaXpvXPShc9+s=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "972a708cf97995463843c08c8585b26997daf0e1",
+			"revisionTime": "2019-02-17T07:26:58Z"
+		},
+		{
+			"checksumSHA1": "4buQslF20IWRfGgbUnYLgNI5Zlo=",
+			"path": "github.com/gorilla/mux",
+			"revision": "15a353a636720571d19e37b34a14499c3afa9991",
+			"revisionTime": "2019-02-28T18:12:03Z"
+		},
+		{
+			"checksumSHA1": "w5/naAzcG0+g6aYx63/of1Wbgqw=",
+			"path": "github.com/jinzhu/gorm/dialects/mysql",
+			"revision": "906799fef2f895116d915e1793314ab9053b400d",
+			"revisionTime": "2019-02-10T07:39:40Z"
+		},
+		{
+			"checksumSHA1": "W/pYxFe8/FHT10/wulwesJsOoUw=",
+			"path": "google.golang.org/appengine/cloudsql",
+			"revision": "54a98f90d1c46b7731eb8fb305d2a321c30ef610",
+			"revisionTime": "2019-02-15T20:43:44Z"
+		},
+		{
+			"checksumSHA1": "oNqPrS2edE8peI3ah2INe379k8E=",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "51d6538a90f86fe93ac480b35f37b2be17fef232",
+			"revisionTime": "2018-11-15T11:05:04Z"
+		}
+	],
+	"rootPath": "projects/realtime-chat"
+}

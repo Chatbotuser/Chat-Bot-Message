@@ -14,7 +14,7 @@ import (
 func main() {
 
 	r := mux.NewRouter()
-	port := getPort()
+	port, _ := getPort()
 
 	r.HandleFunc("/", indexHandler).Methods("GET")
 	fmt.Printf("Server up and running . Running PORT: %s\n", port)
@@ -37,12 +37,11 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Got my server up and running in Go.  Yay!")
 }
 
-func getPort() string {
+func getPort() (string, error) {
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = ":3500"
-		fmt.Printf("PORT NOT DEFINE. USING THE PORT %s as the running port \n", port)
+		return "", fmt.Errorf("$PORT not set")
 	}
 
-	return port
+	return ":" + port, nil
 }
