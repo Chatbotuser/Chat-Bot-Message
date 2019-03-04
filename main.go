@@ -40,6 +40,9 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 func getPort() (string, error) {
 	port := os.Getenv("PORT")
 	if port == "" {
+		// run local
+		// return ":3500", fmt.Errorf("$PORT not set")
+		// deploy
 		return "", fmt.Errorf("$PORT not set")
 	}
 

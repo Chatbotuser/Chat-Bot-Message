@@ -24,6 +24,11 @@ type CallSendApiSimSimResponse struct {
 	Messages string
 }
 
+// func crawlNews
+func crawlNews() {
+
+}
+
 func hear(word string, echo bool, userid string, repid string) string {
 	if echo {
 

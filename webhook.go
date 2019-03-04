@@ -210,6 +210,7 @@ func getUserProfile(userID string) string {
 //SendMessage is used to send the text to the user on messenger
 func SendMessage(UserID string, text string) {
 	userProfile := getUserProfile(UserID)
+	fmt.Println(userProfile)
 	var prof Profile
 
 	json.Unmarshal([]byte(userProfile), &prof)
